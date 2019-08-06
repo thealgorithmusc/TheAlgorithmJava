@@ -1,6 +1,6 @@
 package com.github.thealgorithmusc.tree;
 
-public interface IBiSortTree<T extends Comparable<T>> extends ITree {
+public interface IBiSearchTree<T extends Comparable<T>> extends ITree {
 
     boolean insert(T key);
 

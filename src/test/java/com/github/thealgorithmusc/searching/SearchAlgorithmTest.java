@@ -1,6 +1,6 @@
 package com.github.thealgorithmusc.searching;
 
-import com.github.thealgorithmusc.tree.BiSortTree;
+import com.github.thealgorithmusc.tree.BiSearchTree;
 import org.junit.Test;
 
 import java.util.Arrays;
@@ -31,15 +31,15 @@ public class SearchAlgorithmTest {
     @Test
     public void testBstSearch() {
         Integer[] nums = new Integer[]{18, 8, 36, 11, 41, 59, 98, 27, 86, 89};
-        BiSortTree<Integer> biSortTree = new BiSortTree<>();
+        BiSearchTree<Integer> biSearchTree = new BiSearchTree<>();
         for (Integer i : nums) {
-            biSortTree.insert(i);
+            biSearchTree.insert(i);
         }
 
-        assertEquals(true, SearchAlgorithm.bstSearch(biSortTree, 27));
-        assertEquals(true, SearchAlgorithm.bstSearch(biSortTree, 18));
-        assertEquals(true, SearchAlgorithm.bstSearch(biSortTree, 89));
-        assertEquals(false, SearchAlgorithm.bstSearch(biSortTree, 5));
+        assertEquals(true, SearchAlgorithm.bstSearch(biSearchTree, 27));
+        assertEquals(true, SearchAlgorithm.bstSearch(biSearchTree, 18));
+        assertEquals(true, SearchAlgorithm.bstSearch(biSearchTree, 89));
+        assertEquals(false, SearchAlgorithm.bstSearch(biSearchTree, 5));
     }
 
 }

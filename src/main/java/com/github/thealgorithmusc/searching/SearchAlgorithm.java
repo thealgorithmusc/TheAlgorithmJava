@@ -1,6 +1,6 @@
 package com.github.thealgorithmusc.searching;
 
-import com.github.thealgorithmusc.tree.BiSortTree;
+import com.github.thealgorithmusc.tree.BiSearchTree;
 
 public class SearchAlgorithm {
 
@@ -37,9 +37,9 @@ public class SearchAlgorithm {
     }
     // endregion
 
-    // region Binary sort tree search
-    public static <T extends Comparable<T>> boolean bstSearch(BiSortTree<T> biSortTree, T key) {
-        return biSortTree.find(key);
+    // region Search in a binary search tree
+    public static <T extends Comparable<T>> boolean bstSearch(BiSearchTree<T> biSearchTree, T key) {
+        return biSearchTree.find(key);
     }
     // endregion
 
