@@ -1,7 +1,7 @@
 package com.github.thealgorithmusc.tree;
 
-public class BiSortTree<T extends Comparable<T>> extends BiTree<T>
-    implements IBiSortTree<T> {
+public class BiSearchTree<T extends Comparable<T>> extends BiTree<T>
+    implements IBiSearchTree<T> {
 
     @Override
     public boolean insert(T key) {
